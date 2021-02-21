@@ -1,0 +1,23 @@
+mat-grid-tile {
+    &.executed div {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 12pt;
+        color: #d6d6d6;
+
+        &.action {
+            width: auto;
+            padding: 0 .25rem;
+            justify-content: end;
+        }
+    }
+
+    &.result div {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        font-size: 30pt; // when reachs 16 digits, font-size equals to 21pt
+        font-weight: 600;
+    }
+}

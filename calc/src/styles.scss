@@ -20,7 +20,7 @@ $calc-warn: mat-palette($mat-red, 900);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$calc-theme: mat-light-theme((
+$calc-theme: mat-dark-theme((
   color: (
     primary: $calc-primary,
     accent: $calc-accent,
@@ -38,3 +38,10 @@ $calc-theme: mat-light-theme((
 
 html, body { min-height: 100vh; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+calc-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
