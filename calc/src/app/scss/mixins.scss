@@ -1,0 +1,13 @@
+@import "~@angular/material/theming";
+
+@mixin bg-color-contrast($class) {
+    @if $class == "primary" {
+        background-color: map-get($map: $mat-grey, $key: 700);
+    } @else if $class == "accent" {
+        background-color: map-get($map: $mat-grey, $key: 600);
+    } @else if $class == "warn" {
+        background-color: map-get($map: $mat-red, $key: 700);
+    } @else {
+        @error "Unknown direction #{$class}.";
+    }
+}

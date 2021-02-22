@@ -13,7 +13,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $calc-primary: mat-palette($mat-grey, 900);
-$calc-accent: mat-palette($mat-grey, 800);
+$calc-accent: mat-palette($mat-grey, 700);
 
 // The warn palette is optional (defaults to red).
 $calc-warn: mat-palette($mat-red, 900);
@@ -36,7 +36,7 @@ $calc-theme: mat-dark-theme((
 /* You can add global styles to this file, and also import other style files */
 * { box-sizing: border-box; }
 
-html, body { min-height: 100vh; }
+html, body { min-height: 100vh; background-color: #2e0000; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 calc-root {

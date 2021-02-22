@@ -1,0 +1,15 @@
+<!-- Main Content -->
+<mat-grid-list *ngFor="let kSettings of keyboard" [cols]="kSettings.cols" [rowHeight]="kSettings.rowHeight">
+    <mat-grid-tile *ngFor="let item of kSettings.rows">
+        <ng-container [ngTemplateOutlet]="item.isOperation ? operation : number"
+            [ngTemplateOutletContext]="{val: item.val, color: item.color}"></ng-container>
+
+        <ng-template #number let-val="val" let-color="color">
+            <std-key-number [val]="val" [color]="color"></std-key-number>
+        </ng-template>
+
+        <ng-template #operation let-val="val" let-color="color">
+            <std-key-operation [val]="val" [color]="color"></std-key-operation>
+        </ng-template>
+    </mat-grid-tile>
+</mat-grid-list>

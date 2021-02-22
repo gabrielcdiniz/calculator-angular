@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { StandardRoutingModule } from './standard-routing.module';
 import { StandardComponent } from './standard.component';
 import { ScreenModule } from './screen/screen.module';
+import { KeyboardModule } from './keyboard/keyboard.module';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ScreenModule } from './screen/screen.module';
     CommonModule,
     StandardRoutingModule,
     ScreenModule,
+    KeyboardModule,
   ],
   exports: [
     ScreenModule,
